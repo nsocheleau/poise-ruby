@@ -56,7 +56,7 @@ module PoiseRuby
       # Output value for the Python binary we are installing. Seems to match
       # package name on all platforms I've checked.
       def ruby_binary
-        ::File.join('', 'usr', 'bin', options['package_name'] || system_package_name)
+        ::File.join('', 'usr', 'bin', options['binary_name'] || system_package_name)
       end
 
       private
